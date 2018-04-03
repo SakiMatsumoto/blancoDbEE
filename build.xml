@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="blancoDbEE" default="build" basedir=".">
 	<!-- blancoAnt(0.1.7)により自動生成されました。 (2009/03/26) -->
-	<property name="version" value="2.2.4" />
+	<property name="version" value="2.3.0" />
 
 	<property name="project" value="blancoDbEE" />
 	<property name="project.lower" value="blancodb-ee" />
