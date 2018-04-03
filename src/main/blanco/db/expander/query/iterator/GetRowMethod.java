@@ -103,8 +103,8 @@ public class GetRowMethod extends BlancoDbAbstractMethod {
                             && (columnStructure.getDataType() == Types.CHAR || columnStructure.getDataType() == Types.VARCHAR) ? "blanco.db.runtime.util.BlancoDbRuntimeStringUtil.convertToMsWindows31jUnicode("
                             : "")
                     + BlancoDbMappingUtilJava.mapPrimitiveIntoWrapperClass(columnStructure, "fResultSet."
-                            + BlancoDbMappingUtilJava.getGetterMethodNameForResultSet(columnStructure) + "(" + indexCol
-                            + ")")
+                            + BlancoDbMappingUtilJava.getGetterMethodNameForResultSet(columnStructure) + "(\"" + columnStructure.getName()
+                            + "\")")
                     + (fDbSetting.getConvertStringToMsWindows31jUnicode()
                             && (columnStructure.getDataType() == Types.CHAR || columnStructure.getDataType() == Types.VARCHAR) ? ")"
                             : "")                            + ");");
